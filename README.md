@@ -8,8 +8,22 @@ Wake word: **"Priya Ji"**
 
 ---
 
+## Structure 
+Astraeus_Offline_Assistant/
+│
+├── main.py
+├── asr.py              (optional if separated)
+├── intent_engine.py
+├── actions.py
+├── tts.py
+├── model/              (vosk model folder)
+│
+├── notes.txt
+├── reminders.txt
+│
+├── requirements.txt
+└── README.md
 ## 🚀 Features
-
 - 🎙 Offline Hindi Speech Recognition using Vosk
 - 🧠 Fuzzy Intent Detection using RapidFuzz
 - 💬 Context Memory for follow-up conversations
