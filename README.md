@@ -1,10 +1,6 @@
-Create:
 
-touch README.md
-
-Paste this:
-
-# Astraeus - Offline Hindi Voice Assistant
+# PRIYA
+Privacy-First Real-Time Intelligent Yielding Assistant
 
 ## Overview
 Astraeus is a fully offline Hindi voice assistant built to run on Raspberry Pi CPU without cloud dependency.
