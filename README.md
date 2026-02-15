@@ -1,4 +1,3 @@
-cat << 'EOF' > README.md
 # 🌸 PRIYA  
 ## Privacy-First Real-Time Intelligent Yielding Assistant
 
