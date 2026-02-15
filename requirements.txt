@@ -1,0 +1,6 @@
+vosk
+pyaudio
+numpy
+rapidfuzz
+psutil
+pyttsx3
