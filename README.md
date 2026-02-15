@@ -1,141 +1,86 @@
+cat << 'EOF' > README.md
+# 🌸 PRIYA  
+## Privacy-First Real-Time Intelligent Yielding Assistant
 
-# PRIYA
-Privacy-First Real-Time Intelligent Yielding Assistant
+PRIYA is a fully offline Hindi conversational AI assistant built to run on Raspberry Pi without any cloud dependency.  
+It performs speech recognition, intent detection, and response generation entirely on-device.
 
-## Overview
-Astraeus is a fully offline Hindi voice assistant built to run on Raspberry Pi CPU without cloud dependency.
-
-It uses:
-- Vosk for offline Hindi ASR
-- RapidFuzz for intent detection
-- psutil for system monitoring
-- pyttsx3 for text-to-speech
-
-Wake word: "Priya Ji"
+Wake word: **"Priya Ji"**
 
 ---
 
-## Features
+## 🚀 Features
 
-- Fully offline operation
-- 20+ supported intents
-- Context memory
-- Wake word activation
-- Confidence score display
-- Transcript output
-- System monitoring (CPU, memory, disk)
-- Notes and reminders
-- Warm conversational tone
+- 🎙 Offline Hindi Speech Recognition using Vosk
+- 🧠 Fuzzy Intent Detection using RapidFuzz
+- 💬 Context Memory for follow-up conversations
+- 🔊 Offline Text-to-Speech using pyttsx3 / espeak-ng
+- 💻 System Monitoring:
+  - Time, Date, Day
+  - CPU Usage
+  - Memory Usage
+  - Disk Usage
+  - Battery Status
+- ⚙ System Control:
+  - Shutdown (optional)
+  - Restart (optional)
+  - Volume Control
+- 📝 Notes & Reminder Storage
+- 😂 Jokes & Motivational Responses
+- 🌸 Warm conversational personality
 
 ---
 
-## Hardware
+## 🏗 Architecture
+
+Microphone  
+↓  
+Vosk Speech Recognition  
+↓  
+Intent Detection (RapidFuzz)  
+↓  
+Context Memory  
+↓  
+Action Execution  
+↓  
+Text-to-Speech Output  
+
+All processing is fully offline.
+
+---
+
+## 🛠 Hardware Requirements
 
 - Raspberry Pi 2 / 4 / 5
 - USB Microphone
-- Speaker
+- Speaker / Headphones
+- Raspberry Pi OS (32-bit recommended)
 
 ---
 
-## Installation
+## 📦 Installation
+
+Clone the repository:
 
 ```bash
+git clone <your-repo-link>
+cd voice_assistant
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 sudo apt install espeak-ng portaudio19-dev
+wget https://alphacephei.com/vosk/models/vosk-model-small-hi-0.22.zip
+unzip vosk-model-small-hi-0.22.zip
+mv vosk-model-small-hi-0.22 model
+```
+▶ Run
+```
 python main.py
 ```
-Architecture
-
-Mic → Vosk ASR → Intent Engine → Action Executor → TTS
-
-Fully Offline Guarantee
-
-No cloud APIs are used.
-All processing occurs on-device.
-
-
-# 📝 REPORT STRUCTURE (For Submission)
-
-In your report PDF include:
-
-### 1. Abstract
-Explain offline privacy + Hindi language focus.
-
-### 2. Architecture Diagram
-
-Draw this:
-
-
-Mic → Audio Buffer → Vosk ASR → Intent Engine → Context Memory → Action Layer → TTS
-
-
-### 3. Optimization for Raspberry Pi 2
-
-Mention:
-- Small Hindi model
-- Downsampling 44100 → 16000
-- CPU-only execution
-- No GPU
-
-### 4. Performance Metrics
-
-Include:
-
-- Avg latency
-- Confidence score range
-- RAM usage
-- CPU usage
-
-### 5. Challenges
-
-- Hindi ASR accuracy
-- Accent handling
-- Low-resource hardware
-- Offline NLP limitations
-
-Judges LOVE this section.
-
----
-
-# 🎥 DEMO FLOW THAT WINS
-
-Start recording.
-
-Boot system.
-
-Assistant says:
-> “नमस्ते प्रिया जी। मैं तैयार हूँ।”
-
 Say:
-“Priya ji”
 
-Assistant:
-“जी प्रिया जी, बताइए।”
+Priya Ji
 
-Then show:
+👨‍💻 Author
 
-• Time  
-• CPU usage  
-• Joke  
-• Note saving  
-• Follow-up question  
-• Context memory  
-
-Then say:
-“यह पूरी तरह ऑफलाइन चलता है।”
-
-Boom. Mic drop.
-
-
-
-# 📁 Transfer to Raspberry Pi via USB
-
-1. Copy full project folder to USB.
-2. Plug into Pi.
-3. Copy:
-
-```bash
-cp -r Astraeus_Offline_Assistant ~/
-cd Astraeus_Offline_Assistant
-pip install -r requirements.txt
-python main.py
+Built as an offline embedded AI system for Bharat AI-SoC Student Challenge
