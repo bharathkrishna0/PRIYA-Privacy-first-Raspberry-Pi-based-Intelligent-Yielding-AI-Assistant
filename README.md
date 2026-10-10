@@ -1,5 +1,5 @@
 # 🌸 PRIYA  
-## Privacy-First Real-Time Intelligent Yielding Assistant
+## Privacy-First Real-Time Intelligent Yielding Assistant -Bharat AI-SoC Student Challenge
 
 PRIYA is a fully offline Hindi conversational AI assistant built to run on Raspberry Pi without any cloud dependency.  
 It performs speech recognition, intent detection, and response generation entirely on-device.
