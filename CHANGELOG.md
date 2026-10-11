@@ -27,6 +27,7 @@ All notable changes are documented here. The format follows
 - Transcripts are logged only at `DEBUG` level.
 
 ### Added
+- Terminal demo recording (GIF + MP4) and screenshots in `docs/media/`, shown in the README Demo section.
 - `config.py`: all settings in one place, overridable with `PRIYA_*` variables.
 - `assistant.py`: hardware-free conversation state machine (wake, command,
   confirmation, follow-up "और", timeouts).
