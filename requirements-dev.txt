@@ -1,0 +1,6 @@
+# Tests and linting (no microphone needed).
+vosk>=0.3.45,<0.4
+rapidfuzz>=3.0,<4
+psutil>=5.9,<8
+pytest>=7.4,<9
+ruff>=0.6,<1

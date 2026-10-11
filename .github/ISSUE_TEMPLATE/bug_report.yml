@@ -1,0 +1,36 @@
+name: Bug report
+description: Something does not work as documented
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you said or ran, what PRIYA did, and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. python main.py --text
+        2. type "प्रिया जी समय क्या है"
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: Hardware
+      placeholder: Raspberry Pi 5 (8 GB), USB microphone model, speaker
+  - type: input
+    id: os
+    attributes:
+      label: OS and Python version
+      placeholder: Raspberry Pi OS Bookworm 64-bit, Python 3.11
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Run with PRIYA_LOG_LEVEL=DEBUG. Remove any transcripts you consider private.
+      render: text

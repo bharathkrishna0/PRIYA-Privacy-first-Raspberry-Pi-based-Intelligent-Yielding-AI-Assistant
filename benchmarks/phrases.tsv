@@ -1,0 +1,23 @@
+# expected_intent	spoken phrase (synthesised with espeak-ng)
+wake	प्रिया जी
+time	समय क्या है
+time	अभी कितने बजे हैं
+date	आज की तारीख क्या है
+day	आज कौन सा दिन है
+cpu	सीपीयू उपयोग
+memory	मेमोरी उपयोग
+disk	डिस्क उपयोग
+battery	बैटरी स्थिति
+system_info	सिस्टम जानकारी
+shutdown	सिस्टम बंद करो
+restart	सिस्टम रीस्टार्ट करो
+volume_up	आवाज़ बढ़ाओ
+volume_down	आवाज़ कम करो
+joke	मजाक सुनाओ
+motivation	प्रेरणा दो
+greeting	नमस्ते
+wellbeing	कैसे हो
+thanks	धन्यवाद
+note	नोट सेव करो दूध लाना है
+yes	हाँ
+no	नहीं

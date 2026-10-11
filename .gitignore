@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Speech model (download with scripts/download_model.sh)
+model/
+vosk-model-*/
+*.zip
+
+# User data written at runtime (notes, reminders)
+data/
+notes.txt
+reminders.txt
+
+# Audio recordings and benchmark scratch output
+*.wav
+*.mp3
+*.flac
+benchmarks/results/*
+!benchmarks/results/.gitkeep
+
+# Local config, IDE and OS files
+.env
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
