@@ -1,6 +1,5 @@
-vosk
-pyaudio
-numpy
-rapidfuzz
-psutil
-pyttsx3
+# Runtime dependencies. System packages are also needed: see README (espeak-ng, portaudio19-dev).
+vosk>=0.3.45,<0.4
+pyaudio>=0.2.13,<0.3
+rapidfuzz>=3.0,<4
+psutil>=5.9,<8

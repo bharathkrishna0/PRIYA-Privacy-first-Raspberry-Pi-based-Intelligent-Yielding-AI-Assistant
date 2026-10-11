@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/bharathkrishna0/PRIYA-Privacy-first-Raspberry-Pi-based-Intelligent-Yielding-AI-Assistant/security/advisories/new
+    about: Please report security issues privately (see SECURITY.md).
