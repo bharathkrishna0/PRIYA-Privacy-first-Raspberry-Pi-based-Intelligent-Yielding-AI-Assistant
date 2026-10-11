@@ -28,12 +28,24 @@ device. It was built for the
 
 ## Demo
 
-> **Video to record:** a 30–60 s clip on the Raspberry Pi showing the hardware, then
-> "प्रिया जी" → reply, "समय क्या है" → time, "सीपीयू उपयोग" → CPU load, and
-> "सिस्टम बंद करो" → confirmation → "नहीं" → cancelled. Put it in `docs/media/` (or attach it to a
-> GitHub release) and link it here.
+Terminal demo (44 s) recorded on a Linux PC with no microphone, **not on the Raspberry Pi**.
+It shows text mode, WAV transcription with the real Vosk model, and the error messages. Click the
+animation to open the MP4.
 
-Until then, here is a real session in text mode (`python main.py --text --no-tts`), captured on a
+[![PRIYA terminal demo: text mode, WAV transcription and error handling](docs/media/priya-cli-demo.gif)](docs/media/priya-cli-demo.mp4)
+
+| Text mode and saved note | Shutdown confirmation and unknown request | Synthetic WAV transcription |
+|---|---|---|
+| ![Wake phrase, day, CPU and note commands](docs/media/text-mode.png) | ![Shutdown cancelled with नहीं, dry-run after हाँ, weather not understood](docs/media/shutdown-confirmation.png) | ![espeak-ng WAVs transcribed by Vosk](docs/media/wav-transcription.png) |
+
+In the screenshots the typed lines were pasted all at once, so they appear above the replies. The
+WAV screenshot shows a real failure: espeak-ng audio of "प्रिया जी समय क्या है" was transcribed
+as just "क्या है", so the wake phrase was missed (see [Limitations](#roadmap-and-limitations)).
+
+> **Still to record:** a clip on the Raspberry Pi with a real voice and microphone ("प्रिया जी" →
+> reply, "समय क्या है" → time, "सिस्टम बंद करो" → confirmation → "नहीं").
+
+The same flow as text, from a session in text mode (`python main.py --text --no-tts`), captured on a
 Linux development machine. Typed lines stand in for transcripts and are shown after `>`. The
 `PRIYA:` lines are the program's actual output:
 
